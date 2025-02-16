@@ -1,0 +1,28 @@
+body{
+    background-image: url(https://airindia.scene7.com/is/image/airindia/17);
+    background-size: cover;
+background-repeat: no-repeat;
+}
+#f{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     */
+   
+}
+
+    #d1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12%;
+        gap: 10px;
+    }
+    #b:hover{
+       /* background-color: black;
+       color: white; */
+       background-color: darkgray;
+    }
+
+   
