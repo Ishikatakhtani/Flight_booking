@@ -9,22 +9,25 @@
 <body>
    <div id="c1"> <h2>FLY HIGH. <br>
     ABOVE THE SKY</h2>
+    <img src="output-onlinegiftools.gif" height="70px" width="195px" alt="" id="p"> <br> <br>
     
    </div> 
 <div id="c2">
 <div id="d2"> <h2> LOGIN  </h2>
-    <img src="output-onlinegiftools.gif" height="50px" width="100px" alt=""> <br> <br>
+    <!-- <img src="output-onlinegiftools.gif" height="50px" width="100px" alt=""> <br> <br> -->
 </div>
 <div id="c3">
     <form>
-    Enter Number: <input type="number"  placeholder="enter registered number"> <br> <br>
-       Enter password:<input type="password" placeholder="enter password"> <br> <br>
+        <p id="errornum"></p>
+    Enter Number: <input type="number"  placeholder="enter registered number" id="num"> <br> <br>
+    <p id="errorpass"></p>
+       Enter password:<input type="password" placeholder="enter password" id="pass"> <br> <br>
        
     </form>
 
 </div>
 
-<div id="d3"> <button id="b">LOGIN</button>  <br>
+<div id="d3"> <button id="b"  onclick=" return sub1()">LOGIN</button>  <br>
      <p id="c4">Don't have a account ?Signup</p></div>
 </div>
     

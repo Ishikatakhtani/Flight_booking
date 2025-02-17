@@ -13,16 +13,25 @@ background-repeat: no-repeat;
 }
 
     #d1{
-        display: flex;
+        display: flex; 
         justify-content: center;
         align-items: center;
-        padding-top: 12%;
-        gap: 10px;
+        padding-top: 14%;
+        gap: 12px;
+         flex-direction: column;
     }
+
+
+    #b{
+        margin-left: 2%;
+    }
+
     #b:hover{
        /* background-color: black;
        color: white; */
        background-color: darkgray;
     }
 
-   
+   #c4:hover{
+color:blue;
+   }

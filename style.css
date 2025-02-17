@@ -15,6 +15,10 @@ flex-direction: column;
 color:rgb(27, 27, 28);
 }
 
+#p{
+    position: absolute;
+    margin-top: 0.1%;
+}
 #c2{
     margin-top: 5%;
     display: flex;
