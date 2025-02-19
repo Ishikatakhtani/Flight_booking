@@ -1,6 +1,6 @@
 let sub1=()=>{
-    let ipnumber=document.querySelector("#num").value;
-    let ippassword=document.querySelector("#pass").value;
+    let ipnumber=document.querySelector("#lognum").value;
+    let ippassword=document.querySelector("#logpass").value;
 
     let errnumber=document.querySelector("#errornum");
     let errpass=document.querySelector("#errorpass");
@@ -32,20 +32,45 @@ let sub1=()=>{
         return false
         
 }
-else if(!( ippassword.match([/1234567890/]&&ippassword.match([/ !@#$%^&*()/])&&ippassword.match([/ a-z/])&&ippassword.match([/ A-Z/])))){
-    errpass.innerHTML="please enter correct password"
-    errpass.style.color="green"
-    return false  
+// else if(!( ippassword.match([/1234567890/]&&ippassword.match([/ !@#$%^&*()/])&&ippassword.match([/ a-z/])&&ippassword.match([/ A-Z/])))){
+//     errpass.innerHTML="please enter correct password"
+//     errpass.style.color="green"
+//     return false  
+// }
+
+
+// localStorage.setItem("num", ipnumber)
+// localStorage.setItem("pass",ippassword)
+
+
+if(ippnumber==ipnumber && ippassword==ipassword) {
+location.href="booking.html"
+
 }
-      
+else{
+    alert("invalid")
+}
+return false
 }
 
+
+
+// VANTA.CLOUDS({
+//     el: "#d1",
+//     mouseControls: true,
+//     touchControls: true,
+//     gyroControls: false,
+//     minHeight: 200.00,
+//     minWidth: 200.00
+//   })
+
 let sub=()=>{
+   
     let ipname=document.querySelector("#Fname").value;
     let Lipname=document.querySelector("#Lname").value;
-let ipnumber=document.querySelector("#num").value;
+let ippnumber=document.querySelector("#num").value;
 let ipemail=document.querySelector("#Email").value;
-let ippassword=document.querySelector("#pass").value;
+let ipassword=document.querySelector("#pass").value;
 let ipcpass=document.querySelector("#cpass").value;
 
 let errname=document.querySelector("#errorname");
@@ -85,27 +110,27 @@ else if(!(ipemail.includes('@')&&ipemail.includes(".com"))){
     return false
 }
 
-else if(ipnumber=="" ){
+else if(ippnumber=="" ){
 
     erremail.innerHTML=""
   errnumber.innerHTML="please enter your number"
   errnumber.style.color="red"
   return false
 }
-else if( isNaN(ipnumber)){
+else if( isNaN(ippnumber)){
   erremail.innerHTML=""
   errnumber.innerHTML="please enter number only"
   errnumber.style.color="red"
   return false
 }
-else if(ipnumber.length!==10){
+else if(ippnumber.length!==10){
   erremail.innerHTML=""
   errnumber.innerHTML="please enter 10 digit number "
   errnumber.style.color="red"
   return false
 }
 
-else if(ippassword=="" ){
+else if(ipassword=="" ){
     erremail.innerHTML=""
         errpass.innerHTML="please enter your password"
         errpass.style.color="red"
@@ -119,7 +144,7 @@ else if(ipcpass==""){
     errcpass.style.color="red"
     return false
 }
-else if(ippassword!=ipcpass){
+else if(ipassword!=ipcpass){
 document.querySelector("#cpass").value="";
 document.querySelector("#pass").value="";
 document.querySelector("#cpass").focus();  //to bring cusror on place where we want user to enter pass
@@ -128,9 +153,20 @@ document.querySelector("#cpass").focus();  //to bring cusror on place where we w
     return false
     }
 
-else if(!( ippassword.match([/1234567890/]&&ippassword.match([/ !@#$%^&*()/])&&ippassword.match([/ a-z/])&&ippassword.match([/ A-Z/])))){
+else if(!( ipassword.match(/[1234567890]/) &&ipassword.match(/[ !@#$%^&*()]/)&&ipassword.match(/[ a-z]/)&&ipassword.match(/[ A-Z]/))){
     errpass.innerHTML="please enter correct password"
     errpass.style.color="green"
     return false  
 }
+
+ localStorage.setItem("Fname",ipname)
+localStorage.setItem("Lname",Lipname)
+ localStorage.setItem("numm",ippnumber)
+ localStorage.setItem("Email",ipemail)
+ localStorage.setItem("passs",ipassword)
+ localStorage.setItem("cpasss",ipcpass)
+
+location.href="index.html"
+return false
+
 }

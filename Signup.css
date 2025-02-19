@@ -1,7 +1,7 @@
 body{
-    background-image: url(https://airindia.scene7.com/is/image/airindia/17);
-    background-size: cover;
-background-repeat: no-repeat;
+    /* background-image: url(https://airindia.scene7.com/is/image/airindia/17); */
+    /* background-size: cover;
+background-repeat: no-repeat; */
 }
 #f{
     /* display: flex;
@@ -19,6 +19,8 @@ background-repeat: no-repeat;
         padding-top: 14%;
         gap: 12px;
          flex-direction: column;
+         /* height: 500px;
+         width: 100%; */
     }
 
 

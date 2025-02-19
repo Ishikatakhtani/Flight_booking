@@ -1,14 +1,14 @@
 body{
-     background-image: url(bg2.jpg); 
-        
+      background-image: url(bg2.jpg); 
+         
 background-size: cover;
 background-repeat: no-repeat;
 }
 
 
 #c1{
-display: flex;
-flex-direction: column;
+ display: flex;
+flex-direction: column; 
 
 
 /* padding-top:20%; */
@@ -17,8 +17,8 @@ color:rgb(27, 27, 28);
 }
 
 #p{
-    position: absolute;
-    margin-top: 0.1%;
+    position: absolute; 
+     margin-top: 0.1%;
 }
 #c2{
     margin-top: 5%;
