@@ -55,14 +55,14 @@ return false
 
 
 
-// VANTA.CLOUDS({
-//     el: "#d1",
-//     mouseControls: true,
-//     touchControls: true,
-//     gyroControls: false,
-//     minHeight: 200.00,
-//     minWidth: 200.00
-//   })
+VANTA.CLOUDS({
+    el: "#bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00
+  })
 
 let sub=()=>{
    

@@ -5,34 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="i2.css">
 <body>
-   <div id="c1"> <h2>FLY HIGH. <br>
-    ABOVE THE SKY</h2>
-    
-    <img src="output-onlinegiftools.gif" height="70px" width="195px" alt="" id="p"> <br> <br> 
-    
-   </div> 
-<div id="c2">
-<div id="d2"> <h2> LOGIN  </h2>
-    <!-- <img src="output-onlinegiftools.gif" height="50px" width="100px" alt=""> <br> <br> -->
-</div>
-<div id="c3">
-    <form>
-        <p id="errornum"></p>
-    Enter Number: <input type="number"  placeholder="enter registered number" id="lognum"> <br> <br>
-    <p id="errorpass"></p>
-       Enter password:<input type="password" placeholder="enter password" id="logpass"> <br> <br>
+    <div class="c">
+        <div class="c1 login ">
+            <h2>LOGIN </h2>
+            <form id="first">
+            <input type="number" placeholder="Number" id="lognum"> 
+            <input type="password" placeholder="Password" id="logpass">
+            <button id="b" onclick=" return sub1()">Submit</button>
+        </form> <br> <br>
+        <p id="c4">Don't have a account ?Signup</p>
+        </div>
        
-    </form>
-
-</div>
-
-<div id="d3"> <button id="b"  onclick=" return sub1()">LOGIN</button>  <br>
-     <p id="c4">Don't have a account ?Signup</p></div>
-</div>
-    
-
+            
+    </div>
     <script src="proj.js"></script>
 </body>
 </html>
