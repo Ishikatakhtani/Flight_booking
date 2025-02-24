@@ -1,0 +1,124 @@
+#first{
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMA2FkXcyTdxuDScWXL5V5m8lMbCvybojyIQ&s);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+#fc1{
+  position: absolute;
+  top: 2%;
+ left: 40%;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+ color: white;
+}
+
+#fc2{
+  position: absolute;
+  top: 15%;
+ left: 35%;
+  font-size: 20px;
+  width: 40%;
+  font-style: italic;
+ color: white;
+}
+
+/* Swiper2 */
+
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+
+
+  
+  #bg{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv2ghavSsvp-C_hfxGV6C7iYrH5-2vVCAlg&s);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  #s1{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+  }
+
+#hc2{
+  padding-top: 2%;
+  padding-bottom: 1%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+  #k{
+    /* background-image: url(https://i.pinimg.com/474x/ce/b7/12/ceb71218d61c6a08028bac7e693b0283.jpg); */
+    /* padding-top: 35%;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    
+  }
+
+  
+  #ic1{
+    position: absolute;
+    top: 2%;
+    left: 5%; 
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+   color: white;
+  }
+
+  #ic2{
+    position: absolute;
+    top:27%;
+    left: 5%; 
+    font-size: 25px;
+    font-style: italic;
+color:whitesmoke;
+width: 25%;
+  }
+
+  #ic3{
+    position: absolute;
+    top: 42%;
+    left: 5%; 
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    width: 25%;
+
+  }
+
+  #ic4{
+    position: absolute;
+    top: 65%;
+    left: 5%; 
+  }
+
+  #ic5{
+    position: absolute;
+    top: 2%;
+    left: 70%; 
+  }
