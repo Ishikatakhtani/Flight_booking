@@ -17,13 +17,29 @@ body {
 }
 
 
+
 .c{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 15%;
-
+    /* animation:  slideIn 0.8s ease-in-out; */
 }
+
+
+
+/* @keyframes SlideIn {
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+} */
+
 .c1 {
     width: 300px;
     border-radius: 15px;
