@@ -1,7 +1,7 @@
 body{
-    background-image: url(https://airindia.scene7.com/is/image/airindia/17);
+    /* background-image: url(https://airindia.scene7.com/is/image/airindia/17);
     background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 }
 #f{
     /* display: flex;
@@ -16,12 +16,24 @@ background-repeat: no-repeat;
         display: flex; 
         justify-content: center;
         align-items: center;
-        padding-top: 14%;
+        padding-top: 4%;
         gap: 12px;
          flex-direction: column;
           /* height: 500px;
          width: 100%;  */
     }
+
+
+    input {
+        width: 100%; /* Full width */
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Prevent width overflow */
+    }
+    
+
 
 
     #b{

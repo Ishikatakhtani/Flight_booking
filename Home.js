@@ -55,6 +55,8 @@
 
 
 
+
+
       const progressCircle = document.querySelector(".autoplay-progress svg");
       const progressContent = document.querySelector(".autoplay-progress span");
       var swiper = new Swiper(".mySwiper1", {
@@ -78,4 +80,31 @@
             progressContent.textContent = `${Math.ceil(time / 1000)}s`;
           }
         }
+      });
+
+
+
+
+
+
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      
+
+
+
+      var typed = new Typed('#fc1', {
+        strings: [' ^1000\n <b>Enjoy Your Dream  ^500\n ` <br>Vacation </b>`'],
+      });
+      
+
+      var typed = new Typed('#fc2', {
+        // Waits 1000ms after typing "First"
+        strings: [' ^2500 Book flight Tickets at lowest price'],
       });

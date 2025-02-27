@@ -5,9 +5,7 @@ let sub1=()=>{
     let errnumber=document.querySelector("#errornum");
     let errpass=document.querySelector("#errorpass");
 
-     if(ipnumber=="" ){
-
-        
+     if(ipnumber=="" ){        
       errnumber.innerHTML="please enter your number"
       errnumber.style.color="darkblue"
       return false
@@ -55,14 +53,7 @@ return false
 
 
 
-VANTA.CLOUDS({
-    el: "#bg",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00
-  })
+
 
 let sub=()=>{
    
@@ -170,3 +161,14 @@ location.href="index.html"
 return false
 
 }
+
+
+
+VANTA.CLOUDS({
+    el: "#d1",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00
+  })

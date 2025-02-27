@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="bookform.css">n
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="book.html">Sreach</a></li>
+            <li><a href="">Trips</a></li>
+            <li><a href="bookform.html">Book</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+    
+    <div id="b1">
+        <h2>Flight Ticket Booking</h2>
+        <div class="booking-tabs">
+            <div>ROUND TRIP</div>
+            <div>ONE WAY</div>
+            <div>MULTI CITY</div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>From</label>
+                <input type="text" placeholder="Type Departure City" required>
+            </div>
+            <div class="form-group">
+                <label>To</label>
+                <input type="text" placeholder="Type Destination City" required>
+            </div>
+        </div>
+        <div class="inline-container">
+            <div class="inline-group">
+                <label>Depart</label>
+                <input type="date" required>
+            </div>
+            <div class="inline-group">
+                <label>Return</label>
+                <input type="date">
+            </div>
+            <div class="inline-group">
+                <label>Class</label>
+                <select>
+                    <option>Economy</option>
+                    <option>Business</option>
+                </select>
+            </div>
+           
+        </div> <br>
+        <button id="options">Search Flights</button>
+    </div>
+    
+   
+</body>
+</html>

@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="i2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
-<link rel="stylesheet" href="i2.css">
+
+
 <body>
     <div class="c">
         <div class="c1 login ">
+         
+            <div data-aos="flip-right"
+            data-aos-duration="3000">
+
             <h2>LOGIN </h2>
+            
             <form id="first">
+              
             <input type="number" placeholder="Number" id="lognum"> 
             <input type="password" placeholder="Password" id="logpass">
             <button id="b" onclick=" return sub1()">Submit</button>
@@ -20,6 +30,14 @@
        
             
     </div>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
     <script src="proj.js"></script>
 </body>
 </html>
