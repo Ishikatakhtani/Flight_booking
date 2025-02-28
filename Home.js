@@ -31,6 +31,7 @@
 
 
 
+
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
@@ -107,4 +108,32 @@
       var typed = new Typed('#fc2', {
         // Waits 1000ms after typing "First"
         strings: [' ^2500 Book flight Tickets at lowest price'],
+      });
+
+
+
+
+
+
+      var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
       });
