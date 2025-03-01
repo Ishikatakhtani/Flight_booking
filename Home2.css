@@ -1,17 +1,21 @@
 
-
+body{
+   /* background: linear-gradient(45deg, #C9DCE9,#2A63AB
+   , #001842);  */
+}
 
 #cover{
   background-image: url(https://i.pinimg.com/736x/8c/c1/0e/8cc10e4faf3c387605d21c8ae4a5dc84.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://img.freepik.com/free-vector/hand-drawn-travel-background_23-2148051446.jpg?ga=GA1.1.470083696.1732897902&semt=ais_hybrid);
+  /* background-image: url(https://img.freepik.com/free-vector/hand-drawn-travel-background_23-2148051446.jpg?ga=GA1.1.470083696.1732897902&semt=ais_hybrid); */
   /* background: linear-gradient(45deg, #3498db, #e74c3c, #2ecc71); */
+  background-image: url(https://img.freepik.com/premium-photo/top-view-no-vacation-concept-with-plane_23-2148580921.jpg?w=1800);
   background-size: 200% 200%;
   animation: gradient-shift 5s ease infinite;
 
  
-    height: 500px;
+    height: 600px;
     width: 100%;
 
   
@@ -26,25 +30,37 @@
 }
 
 #fc1{
-  color:orange ;
+  /* color:orange ; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-top: 5%;
   padding-left: 2%;
+  font-size: 40px;
+  font-stretch: expanded;
 }
 
 #fc2{
-  color:red;
+  color:orangered;
   padding-left: 2%;
   font-size: 30px;
 }
 #fc3{
-  
   padding-left: 2%;
   font-size: 30px;
 }
 
-#fc4:hover{
+#fc4{
+  font-size: large;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background: #0052D4;
   color: white;
-  background-color: darkgoldenrod;
+  border-radius: 5px;
+}
+#fc4:hover{
+  color: black;
+  background-color: white;
  
 }
 
@@ -67,14 +83,34 @@
 #q{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 25px;
+  padding-left: 1%;
+  color:orangered;
 }
-#q1{
-  /* border: 1px solid black; */
+
+#bk{
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 20px;
+  background: #0052D4;
+  color: white;
+  border-radius: 5px;
+}
+
+#bk:hover{
+  
+    color: black;
+    background-color: white;
+}
+/* #q1{
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
   gap:18%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 25px;
+
 }
 
 #q3{
@@ -87,7 +123,7 @@
   margin-bottom: 2%;
   font-size: 25px;
  padding-top: 1%;
-}
+} */
 
 
 
@@ -135,6 +171,7 @@
     justify-content: center;
     align-items: center;
     font-style: italic;
+    
   }
 
 #hc2{
@@ -182,6 +219,20 @@ width: 25%;
     position: absolute;
     top: 65%;
     left: 5%; 
+    padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+    font-size: 20px;
+    background: #0052D4;
+    color: white;
+    border-radius: 5px;
+  }
+
+  #ic4:hover{
+    color: black;
+    background-color: white;
+   
   }
 
   #ic5{
@@ -379,19 +430,55 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   #click{
     height: 100%;
     width: 100%;
-  
     font-size: 25px;
+    background: #0052D4;
+    color: white;
+    border-radius: 5px;
+  }
+
+  #click:hover{
+    color: black;
+    background-color: white;
+   
   }
 
   #india1{
+    color:orangered;
     font-size: 35px;
   }
 
   #World1{
+    color:orangered;
     font-size: 35px; 
   }
 
 
-  #iw1:{
-
+  #iw1:hover{
+transform: scale(1.5);
+overflow: hidden;
   }
+
+  #iw1:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+      }
+      #iw2:hover{
+        transform: scale(1.5);
+        overflow: hidden;
+          }
+          #iw3:hover{
+            transform: scale(1.5);
+            overflow: hidden;
+              }
+              #iw4:hover{
+                transform: scale(1.5);
+                overflow: hidden;
+                  }
+                  #iw5:hover{
+                    transform: scale(1.5);
+                    overflow: hidden;
+                      }
+
+
+/* Type js */
+

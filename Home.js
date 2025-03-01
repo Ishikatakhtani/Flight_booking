@@ -139,3 +139,7 @@
       });
 
 
+      var typed = new Typed('#World1', {
+        // Waits 1000ms after typing "First"
+        strings: ['^1000','VISIT WORLD'],
+      });
