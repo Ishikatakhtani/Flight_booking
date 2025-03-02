@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+#nav{
+    width: 100%;
+    color: black;
+   /* position: fixed; */
+    height: 80px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+      /* padding: 10px;  */
+      align-items: center;
+    justify-content:end ;
+    padding: 15px 20px;
+    
+    
+  }
+  
+  #nav nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 4%;
+    
+  }
+  
+  
+  
+  #nav nav ul a{
+    text-decoration: none;
+    color: black;
+   
+  }
+  
+  #nav nav ul li{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+  }
+  #nav-links a:hover {
+    color: #f39c12;
+  }
+  
+
+  body{
+    background: linear-gradient(45deg, #49535a,#2A63AB
+   , #001842);  
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite;
+}
+ @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  #infoheading{
+    margin-left: 2%;
+  }
+
+#info1{
+    display: flex;
+    flex-direction: row;
+}
+
+#book{
+   
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 2%;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+
+#city{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    gap: 13%;
+}
+
+#from{
+    color: #f39c12;
+    font-size: 30px;
+}
+
+#To{
+    color: #f39c12;
+    font-size: 30px;
+}
+
+#inpdep{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* padding-right: 85%; */
+    /* padding-left: 2%; */
+}
+
+#inpdes{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* padding-right: 85%; */
+    /* padding-left: 2%; */
+}
+
+#date{
+    display: flex;
+    /* padding-left: 29%; */
+    flex-direction: row;
+    gap: 10%; 
+}
+
+#ddate{
+    color: #f39c12;
+    font-size: 25px;
+}
+
+#rdate{
+    color: #f39c12;
+    font-size: 25px;
+}
+
+#class{
+    color: #f39c12;
+    font-size: 25px;
+}
+
+#inpdate{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* padding-right: 95%; */
+    padding-left: 3%;
+}
+
+#inprdate{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* padding-right: 95%; */
+    padding-left: 3%;
+}
+
+#inpsel{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* padding-right: 95%; */
+    padding-left: 3%;
+}
+
+#pass1{
+    display: flex;
+  /* padding-left: 29%; */
+    flex-direction: row;
+   gap: 3%;
+}
+
+#pass{
+    display: flex;
+  /* padding-left: 29%; */
+    flex-direction: row;
+   gap: 13%;
+}
+
+#passadult{
+    color: #f39c12;
+    font-size: 25px;
+    
+}
+#inpnum{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%; 
+}
+
+#inppas{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%; 
+}
+
+#inpadult{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%; 
+}
+
+#inpchild{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%; 
+}
+
+#flightoptions{
+    width: 15%;
+    height: 15%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+#flightoptions:hover{
+    background-color:blue;
+    color: white;
+    }
+
+
+#comp{
+    display: flex;
+    flex-direction: row;
+}
+
+#pay{
+    padding-top: 5%;
+}
+#fare{
+    font-size: 30px;
+}
+
+#tax{
+    font-size: 30px;
+}
+
+#total{
+    font-size: 30px;
+}

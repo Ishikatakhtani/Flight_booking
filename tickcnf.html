@@ -6,7 +6,123 @@
     <title>Document</title>
     <link rel="stylesheet" href="tick.css">
 </head>
-<body>
+
+<header id="nav"> 
+    <nav>
     
+        <div class="logo"></div>
+        <ul id="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="book.html">Sreach</a></li>
+            <li><a href="">Trips</a></li>
+            <li><a href="bookform.html">Book</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+ </nav>
+ </header >
+
+<body onload="fetchdata()">
+    <div id="comp"> 
+       
+        
+<br>
+<form id="dat">
+    <div id="book">
+        <h1 id="infoheading">TRAVELS DETAILS</h1>
+        <br> <br>
+        <div id="city">
+            <div id="from">First Name:<br>
+                <input type="text" placeholder="type departure city" id="inpdep">
+            </div>
+            <div id="To">
+                Last Name: <br>
+                <input type="text" placeholder="type destination city" id="inpdes">
+            </div>
+        </div>
+         <br> <br> <br> 
+        <div id="date">
+        <div id="ddate"> Depart Date :  <br>
+            <input type="date" id="inpdate">
+        </div>
+        <div id="rdate"> Return Date: <br>
+            <input type="date" id="inprdate">
+        </div>
+        <div id="class">
+            CLASS: <br>
+            <select  id="inpsel">
+                <option>Economy</option>
+                <option>Business</option>
+            </select>
+        </div>
+        </div>
+         <br> <br> <br>
+        <div id="pass1">
+        
+<div id="passadult">Mobile No.
+    <input type="number" placeholder="enter mobile no"  id="inpnum">
+</div>
+
+<div id="passadult"> Passport No.
+    <input type="number" placeholder="enter passport no"  id="inppas">
+</div>
+
+</div>
+
+<br> <br> <br>
+<div id="pass">
+            <div id="passadult"> ADULT: <br>
+                <input type="number" id="inpadult" placeholder="add number of adult">
+            </div>
+        
+            <div id="passadult">CHILD: <br>
+                <input type="number"  id="inpchild" placeholder="add number of children">
+            </div>
+          
+        
+        </div>
+         <br> <br> <br> <br> 
+         <div id="passadult"> <br>
+        <button id="flightoptions" >BOOK</button>
+        <button id="flightoptions" onclick="del()">CANCEL</button>
+        <button id="flightoptions">Edit</button>
+</div>
+        </div>
+        
+</form>
+
+<div id="pay">
+    <div id="fare">
+         Base Fare : <p></p></div> <br>
+ <div id="tax">
+    Tax: <p></p>
+ </div>  <br>
+ <div id="total">
+    Total Fare: <p></p>
+ </div> <br>
+</div>
+
+    </div>
+
+    <div>
+        <table id="t">
+<thead>
+<th>First Nme</th>
+<th>Last Name</th>
+<th>date</th>
+<th>return date</th>
+<th>select</th>
+<th>number</th>
+<th>passport</th>
+<th>adult</th>
+<th>child</th>
+</thead>
+<tbody>
+    
+</tbody>
+        </table>
+    </div>
+
+    <script src="tickt.js"></script>    
 </body>
+
 </html>

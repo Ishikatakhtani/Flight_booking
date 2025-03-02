@@ -1,0 +1,15 @@
+{
+    "flight":[
+        {
+        "inpdep":"ishika",
+        "inpdes":"takhtani",
+        "inpdate":"22/4/25",
+        "intrdate":"25/04/25",
+        "inpsel":"business",
+        "inpnum":999865433,
+        "inppass":12468,
+        "inpadult":3,
+        "inpchid":1
+        }
+    ]
+}
