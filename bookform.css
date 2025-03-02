@@ -2,163 +2,211 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    font-family: Arial, sans-serif;
-    background: url('homebg.jpg') no-repeat center center/cover;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 15px 20px;
-    position: absolute;
+  }
+  
+  #nav{
     width: 100%;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.logo {
     color: black;
-    font-size: 24px;
-    font-weight: bold;
-}
-.nav-links {
+   /* position: fixed; */
+    height: 80px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+      /* padding: 10px;  */
+      align-items: center;
+    justify-content:end ;
+    padding: 15px 20px;
+    
+    
+  }
+  
+  #nav nav ul{
     list-style: none;
     display: flex;
-}
-.nav-links li {
-    margin: 0 15px;
-}
-.nav-links a {
+    gap: 50px;
+    margin-right: 4%;
+    
+  }
+  
+  
+  
+  #nav nav ul a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
-    transition: 0.3s;
-}
-.nav-links a:hover {
+   
+  }
+  
+  #nav nav ul li{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+  }
+  #nav-links a:hover {
     color: #f39c12;
-}
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    color: black;
-    cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background: rgba(255, 255, 255, 0.9);
-        width: 150px;
-        text-align: right;
-        border-radius: 5px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .menu-toggle {
-        display: block;
-    }
-}
-#b1{
-    background: rgb(40, 39, 39);
-    color: white;
-    width: 40%;
-margin-top: 10%;
-margin-left: 30%;
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-}
-.booking-tabs {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 5px;
-}
-.booking-tabs div {
-    margin: 0 10px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    padding: 8px;
-    border-radius: 5px;
-}
-.booking-tabs div:nth-child(1) {
-    background: #f39c12;
-}
-.booking-tabs div:nth-child(2), .booking-tabs div:nth-child(3) {
-    background: #f9e79f;
-    color: black;
-}
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-.form-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px;
-    width: 48%;
-}
-.inline-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.inline-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 28%;
-    margin-right: 4%;
-}
-.inline-group:last-child {
-    margin-right: 0;
-}
-.empty-space {
-    width: 10%;
-}
-.form-group label, .inline-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-.form-group input, .inline-group input, .inline-group select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-}
-.booking-container button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #f39c12;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-}
-
-#options:hover{
-    color: white;
-    background-color: #f39c12;
-    transform: scale(1.5);
   }
 
-#options{
-  color: black;
-  background-color:#f9e79f;
+body{
+    /* background-image: url(https://media.istockphoto.com/id/1066253974/photo/airplane-flight-tropical-vacations.jpg?s=612x612&w=0&k=20&c=fL1ixGnqGVHW2Fph7Gwg0Gt5EmhxiLMDNAAb1ubje_w=) ;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(45deg, #C9DCE9,#2A63AB
+   , #001842);  
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite;
+}
+ @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+   
   
+#heading{
+    color:#f39c12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    font-size: 40px;
 }
 
+#flight{
+    background-color: #f39c12;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+#flight1{
+  
+  border: none;
+  background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#flight2{
+    border: none;
+    background-color: transparent;
+      font-size: 30px;
+      cursor: pointer;
+}
+
+#book{
+   
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    margin-left: 30%;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+
+#city{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    gap: 19%;
+}
+
+#from{
+    color: #f39c12;
+    font-size: 30px;
+}
+
+#To{
+    color: #f39c12;
+    font-size: 30px;
+}
+
+#inpdep{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 85%;
+    padding-left: 2%;
+}
+
+#inpdes{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 85%;
+    padding-left: 2%;
+}
+
+#date{
+    display: flex;
+    /* padding-left: 29%; */
+    flex-direction: row;
+    gap: 10%; 
+}
+
+#ddate{
+    color: #f39c12;
+    font-size: 25px;
+}
+
+#rdate{
+    color: #f39c12;
+    font-size: 25px;
+}
+
+#class{
+    color: #f39c12;
+    font-size: 25px;
+}
+
+#inpdate{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* padding-right: 95%; */
+    padding-left: 3%;
+}
+
+#pass{
+    display: flex;
+  /* padding-left: 29%; */
+    flex-direction: row;
+   gap: 10%;
+}
+
+#passadult{
+    color: #f39c12;
+    font-size: 25px;
+    
+}
+#inpadult{
+    font-size: 25px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 2%; 
+}
+
+#flightoptions{
+    width: 15%;
+    height: 15%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+#flightoptions:hover{
+    background-color:blue;
+    color: white;
+    }

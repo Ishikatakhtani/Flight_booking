@@ -3,60 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flight Booking</title>
-    <link rel="stylesheet" href="bookform.css">n
+    <title>Document</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monomakh&family=Noto+Sans+Warang+Citi&family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="bookform.css">
 </head>
-<body>
-    <nav class="navbar">
+
+<header id="nav"> 
+    <nav>
+    
         <div class="logo"></div>
-        <ul class="nav-links">
+        <ul id="nav-links">
             <li><a href="Home.html">Home</a></li>
             <li><a href="book.html">Sreach</a></li>
             <li><a href="">Trips</a></li>
             <li><a href="bookform.html">Book</a></li>
             <li><a href="index.html">Login</a></li>
         </ul>
-        <div class="menu-toggle">&#9776;</div>
-    </nav>
+ </nav>
+ </header >
+
+<body>
     
-    <div id="b1">
-        <h2>Flight Ticket Booking</h2>
-        <div class="booking-tabs">
-            <div>ROUND TRIP</div>
-            <div>ONE WAY</div>
-            <div>MULTI CITY</div>
-        </div>
-        <div class="row">
-            <div class="form-group">
-                <label>From</label>
-                <input type="text" placeholder="Type Departure City" required>
-            </div>
-            <div class="form-group">
-                <label>To</label>
-                <input type="text" placeholder="Type Destination City" required>
-            </div>
-        </div>
-        <div class="inline-container">
-            <div class="inline-group">
-                <label>Depart</label>
-                <input type="date" required>
-            </div>
-            <div class="inline-group">
-                <label>Return</label>
-                <input type="date">
-            </div>
-            <div class="inline-group">
-                <label>Class</label>
-                <select>
-                    <option>Economy</option>
-                    <option>Business</option>
-                </select>
-            </div>
-           
-        </div> <br>
-        <button id="options">Search Flights</button>
+<h1 id="heading">Flight Ticket booking</h1>
+
+<div id="flight"> 
+<div > <button id="flight1" onclick="change()">Round trip</button> </div>
+ <div > <button id="flight2" onclick="change1()" >One Way </button></div>
+</div>
+<br> <br> 
+<div id="book">
+<div id="city">
+    <div id="from">From : <br>
+        <input type="text" placeholder="type departure city" id="inpdep">
     </div>
-    
-   
+    <div id="To">
+        To: <br>
+        <input type="text" placeholder="type destination city" id="inpdes">
+    </div>
+</div>
+ <br> <br> <br> 
+<div id="date">
+<div id="ddate"> Depart Date :  <br>
+    <input type="date" id="inpdate">
+</div>
+<div id="rdate"> Return Date: <br>
+    <input type="date" id="inpdate">
+</div>
+<div id="class">
+    CLASS: <br>
+    <select  id="inpdate">
+        <option>Economy</option>
+        <option>Business</option>
+    </select>
+</div>
+</div>
+ <br> <br> <br>
+<div id="pass">
+
+    <div id="passadult"> ADULT: <br>
+        <input type="number" id="inpadult" placeholder="add number of adult">
+    </div>
+
+    <div id="passadult">CHILD: <br>
+        <input type="number"  id="inpadult" placeholder="add number of children">
+    </div>
+  
+
+</div>
+ <br> <br> <br> <br> 
+<button id="flightoptions">Sreach Flight</button>
+</div>
+
 </body>
+
+
+
+<script src="bookform.js"></script>
 </html>
