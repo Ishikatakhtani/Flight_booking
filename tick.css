@@ -73,10 +73,12 @@
 
 #book{
    
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-left: 2%;
+    width: 90%;
+
+    margin-top: 5%;
     /* justify-content: center;
     align-items: center; */
     
@@ -121,6 +123,7 @@
     /* padding-left: 29%; */
     flex-direction: row;
     gap: 10%; 
+   
 }
 
 #ddate{
@@ -181,6 +184,8 @@
     font-size: 25px;
     
 }
+
+
 #inpnum{
     font-size: 25px;
     padding-top: 3%;
@@ -231,7 +236,8 @@
 }
 
 #pay{
-    padding-top: 5%;
+    padding-left: 35%;
+    padding-top: 9%;
 }
 #fare{
     font-size: 30px;
