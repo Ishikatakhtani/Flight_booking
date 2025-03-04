@@ -1,3 +1,40 @@
 {
-  "flight": []
+  "flight": [
+    {
+      "inpdep": "Ishika",
+      "inpdes": "Takhtani",
+      "inpdate": "2025-03-27",
+      "inprdate": "2025-03-30",
+      "inpsel": "Economy",
+      "inpnum": "09755992640",
+      "inppas": "",
+      "inpadult": "",
+      "inpchild": "5",
+      "id": "fa63"
+    },
+    {
+      "id": "25d5",
+      "inpdep": "Ishika",
+      "inpdes": "Takhtani",
+      "inpdate": "2025-03-30",
+      "inprdate": "2025-03-22",
+      "inpsel": "Economy",
+      "inpnum": "09755992640",
+      "inppass": "234",
+      "inpadult": "3",
+      "inpchild": "1"
+    },
+    {
+      "id": "0f80",
+      "inpdep": "KRISH",
+      "inpdes": "Takhtani",
+      "inpdate": "",
+      "inprdate": "",
+      "inpsel": "Economy",
+      "inpnum": "097554567",
+      "inppass": "",
+      "inpadult": "",
+      "inpchild": ""
+    }
+  ]
 }

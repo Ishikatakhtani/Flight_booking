@@ -7,7 +7,11 @@
 </head>
 <body onload="fetchdata()">
     
-    <table id="t" border="2px">
+
+<!-- SREACH -->
+   Sreach  <input type="text"  id="sreachinp" oninput="sreachh()">
+   
+   <table  border="2px">
         <thead>
         <th>First Nme</th>
         <th>Last Name</th>
@@ -21,12 +25,14 @@
         <th>del</th>
         <th>update</th>
         </thead>
-        <tbody>
+        <tbody id="t">
             
         </tbody>
                 </table>
 
 
+
+                <div id="formdata"></div>
 
     <script src="tickt.js"></script>
 </body>
