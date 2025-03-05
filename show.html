@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<header id="nav"> 
+    <nav>
+    
+        <div class="logo"></div>
+        <ul id="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#india">Sreach</a></li>
+            <li><a href="show.html">Trips</a></li>
+            <li><a href="bookform.html">Book</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+ </nav>
+ </header >
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="show.css">
 </head>
 <body onload="fetchdata()">
     
 
 <!-- SREACH -->
+<h2>Ticket Management System</h2>
+
+<!-- <div id="search-container">
+    <label for="search-input">Search:</label>
+    <input type="text" id="searchinp" placeholder="Search tickets..." oninput="sreachh()">
+</div> -->
    Sreach  <input type="text"  id="sreachinp" oninput="sreachh()">
    
    <table  border="2px">
@@ -34,6 +57,10 @@
 
                 <div id="formdata"></div>
 
+
+
+<!-- SWEETALERT -->
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="tickt.js"></script>
 </body>
 </html>

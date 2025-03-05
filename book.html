@@ -24,26 +24,46 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
  
 
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="book.css">
+
+
+
+
+  <!-- NAV -->
+
+  <div data-aos="fade-down"
+  data-aos-easing="linear"
+  data-aos-duration="1500">
+  <header id="nav"> 
+    <nav>
+    
+        <div class="logo"></div>
+        <ul id="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#india">Sreach</a></li>
+            <li><a href="show.html">Trips</a></li>
+            <li><a href="bookform.html">Book</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+ </nav>
+ </header >
+</div>
+  
 
 </head>
 
-<header id="nav"> 
-  <nav>
-  
-      <div class="logo"></div>
-      <ul id="nav-links">
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="book.html">Sreach</a></li>
-          <li><a href="">Trips</a></li>
-          <li><a href="bookform.html">Book</a></li>
-          <li><a href="index.html">Login</a></li>
-      </ul>
-</nav>
-</header >
+
 
 
 <body>
+
+ 
+
+
 <div id="home1">  
   
 <div id="home2">
@@ -59,7 +79,7 @@
       </div>
 <div id="option1time">22:40 &nbsp;<i class="fa-solid fa-minus"></i> <i class="fa-solid fa-minus"></i>&nbsp;  23:50</div>
 <div id="option1price"> Rs4520</div>
-<button id="booktick"><a href="bookform.html"> Check Now  </a></button>   
+<button id="booktick"><a href="tickcnf.html"> Check Now  </a></button>   
 </div>
 
 
@@ -72,7 +92,7 @@
   </div>
 <div id="option1time" > 1:40  &nbsp;<i class="fa-solid fa-minus"></i> <i class="fa-solid fa-minus"></i>&nbsp;   5:00</div>
 <div id="option1price"> Rs6920</div>
-<button id="booktick"><a href="bookform.html"> Check Now  </a></button>
+<button id="booktick"><a href="tickcnf.html"> Check Now  </a></button>
 
 </div>
 
@@ -85,7 +105,7 @@
   </div>
 <div id="option1time" > 6:00  &nbsp;<i class="fa-solid fa-minus"></i> <i class="fa-solid fa-minus"></i>&nbsp;  9:30</div>
 <div id="option1price"> Rs2520</div>
-<button id="booktick"><a href="bookform.html"> Check Now  </a></button>
+<button id="booktick"><a href="tickcnf.html"> Check Now  </a></button>
 </div>
 
 
@@ -98,7 +118,7 @@
   </div>
 <div id="option1time" > 11:00 &nbsp;<i class="fa-solid fa-minus"></i> <i class="fa-solid fa-minus"></i>&nbsp;   12:30</div>
 <div id="option1price"> Rs9520</div>
-<button id="booktick"><a href="bookform.html"> Check Now  </a></button>
+<button id="booktick"><a href="tickcnf.html"> Check Now  </a></button>
 </div>
 
 
@@ -111,7 +131,7 @@
   </div>
 <div id="option1time" > 15:15 &nbsp;<i class="fa-solid fa-minus"></i> <i class="fa-solid fa-minus"></i>&nbsp;  19:00</div>
 <div id="option1price"> Rs7520</div>
-<button id="booktick"><a href="bookform.html"> Check Now  </a></button>
+<button id="booktick"><a href="tickcnf.html"> Check Now  </a></button>
 
 </div>
 
@@ -124,7 +144,7 @@
   </div>
 <div id="option1time" > 21:00 &nbsp;<i class="fa-solid fa-minus"></i> <i class="fa-solid fa-minus"></i>&nbsp;   23:50</div>
 <div id="option1price"> Rs2110</div>
-<button id="booktick"><a href="bookform.html"> Check Now  </a></button>
+<button id="booktick"><a href="tickcnf.html"> Check Now  </a></button>
 
 </div>
 
@@ -148,7 +168,7 @@
 <h3> Live as if</h3>
 <h1><b> THE PARADISE </b></h1>
 <h3> is on earth </h3> <br>
-<button id="book"><b>Plan a trip</b></button>
+<button id="book"><b> <a href="#india">Plan a trip</b></button></a>
 
 
 
@@ -166,6 +186,14 @@
 
 
  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <script src="book.js"></script>
+    
+ 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+ 
+ <script src="book.js"></script>
 </body>
 </html>

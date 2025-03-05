@@ -45,9 +45,9 @@ let datashow=(data)=>{
              <td>${e.inpsel}</td>
              <td>${e.inpnum}</td> 
             <td>${e.inppas}</td>   
-            <td>${e.inadult}</td> 
+            <td>${e.inpadult}</td> 
             <td>${e.inpchild}</td> 
-           <td onclick="del('${e.id}')">Cancel</td>
+           <td onclick="cnfdel('${e.id}')">Cancel</td>
             <td onclick="upd('${e.id}')">Update</td>
             </tr>
             `
@@ -56,9 +56,34 @@ let datashow=(data)=>{
 
 }
 
+
+let cnfdel=()=>{
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+            del(id)
+          Swal.fire({
+            title: "Deleted!",
+            text: "Your file has been deleted.",
+            icon: "success"
+          });
+        }
+      });
+}
 let del=(id)=>{
     let url=`http://localhost:3000/flight/${id}`
 fetch(url , {method:"DELETE"})
+
+
+
+
 }
 
 
@@ -87,12 +112,12 @@ let ins = () => {
             "inprdate": sdater,  
             "inpsel": ssel,
             "inpnum": snum,
-            "inppass": spass,
+            "inppas": spass,
             "inpadult": sadult,
             "inpchild": schild
         })
     })
-  
+  location.href="show.html"
 return false
 }
 
@@ -177,6 +202,9 @@ let upd=async(id)=>{
         
     `
 document.querySelector("#formdata").innerHTML=formdata
+
+
+
 }
 
 

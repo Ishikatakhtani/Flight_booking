@@ -2,54 +2,26 @@ let sub1=()=>{
     let ipnumber=document.querySelector("#lognum").value;
     let ippassword=document.querySelector("#logpass").value;
 
-    let errnumber=document.querySelector("#errornum");
-    let errpass=document.querySelector("#errorpass");
-
-     if(ipnumber=="" ){        
-      errnumber.innerHTML="please enter your number"
-      errnumber.style.color="darkblue"
-      return false
-  }
-  else if( isNaN(ipnumber)){
-     
-      errnumber.innerHTML="please enter number only"
-      errnumber.style.color="darkblue"
-      return false
-  }
-  else if(ipnumber.length!==10){
-      
-      errnumber.innerHTML="please enter 10 digit number "
-      errnumber.style.color="darkblue"
-      return false
-  }
-
-  else if(ippassword=="" ){
-    errnumber.innerHTML=""
-        errpass.innerHTML="please enter your password"
-        errpass.style.color="darkblue"
-        return false
+    
+    
+       let localnum=localStorage.getItem("numm")
+       let localpas=localStorage.getItem("passs")
+    
         
-}
-// else if(!( ippassword.match([/1234567890/]&&ippassword.match([/ !@#$%^&*()/])&&ippassword.match([/ a-z/])&&ippassword.match([/ A-Z/])))){
-//     errpass.innerHTML="please enter correct password"
-//     errpass.style.color="green"
-//     return false  
-// }
 
+    if(ipnumber==localnum && ippassword==localpas){
+        location.href="Home.html"
+    }
+    
+    Swal.fire({
+        title: "Drag me!",
+        icon: "success",
+        draggable: true
+      });
+    return false;
+    
+    }
 
-// localStorage.setItem("num", ipnumber)
-// localStorage.setItem("pass",ippassword)
-
-
-if(ippnumber==ipnumber && ippassword==ipassword) {
-location.href="booking.html"
-
-}
-else{
-    alert("invalid")
-}
-return false
-}
 
 
 
@@ -84,8 +56,11 @@ if(Lipname==""){
     // nameinput.placeholder="enter name "
     errlname.innerHTML="please enter you name"
     errlname.style.color="red"
+
     return false
 }
+
+
 
 
 
@@ -157,18 +132,20 @@ localStorage.setItem("Lname",Lipname)
  localStorage.setItem("passs",ipassword)
  localStorage.setItem("cpasss",ipcpass)
 
+
+
+
 location.href="index.html"
+
+
+
+
+
 return false
+
+
 
 }
 
 
 
-VANTA.CLOUDS({
-    el: "#d1",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00
-  })

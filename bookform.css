@@ -209,3 +209,8 @@ body{
     background-color:blue;
     color: white;
     }
+
+#flightoptions a{
+  text-decoration: none;
+  color: black;
+}
