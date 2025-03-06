@@ -8,7 +8,7 @@ let fetchdata=async()=>{
     console.log(data);
 
     //sreach
-    datashow(data)
+    paginationdata(data)
 
     
 }
@@ -26,7 +26,7 @@ let sreachh=async()=>{
         return e.inpdep.toLowerCase().includes(sreachinp) 
     })
 
-    datashow(filterdata)
+    paginationdata(filterdata)
 
 }
 
@@ -47,6 +47,7 @@ let datashow=(data)=>{
             <td>${e.inppas}</td>   
             <td>${e.inpadult}</td> 
             <td>${e.inpchild}</td> 
+            <td>${(e.inpchild+e.inpadult)*e.price}</td>
            <td onclick="cnfdel('${e.id}')">Cancel</td>
             <td onclick="upd('${e.id}')">Update</td>
             </tr>
@@ -54,10 +55,11 @@ let datashow=(data)=>{
         )
     })
 
+
 }
 
 
-let cnfdel=()=>{
+let cnfdel=(id)=>{
     Swal.fire({
         title: "Are you sure?",
         text: "You won't be able to revert this!",
@@ -95,8 +97,8 @@ let ins = () => {
     let ssel = document.querySelector("#inpsel").value;
     let snum = document.querySelector("#inpnum").value;
     let spass = document.querySelector("#inppas").value;
-    let sadult = document.querySelector("#inpadult").value;
-    let schild = document.querySelector("#inpchild").value;
+    let sadult =parseInt( document.querySelector("#inpadult").value);
+    let schild =parseInt( document.querySelector("#inpchild").value);
 
     let url = 'http://localhost:3000/flight';
 
@@ -114,7 +116,8 @@ let ins = () => {
             "inpnum": snum,
             "inppas": spass,
             "inpadult": sadult,
-            "inpchild": schild
+            "inpchild": schild,
+            "price":5000
         })
     })
   location.href="show.html"
@@ -235,10 +238,24 @@ document.querySelector("#formdata").innerHTML=formdata
               "inpnum":snum,
               "inppas":spas,
               "inpadult":sadult,
-              "inpchild":schild
-
+              "inpchild":schild,
+              "price":5000
             })
         })
     
         return false;
     }
+
+
+
+let paginationdata=()=>{
+    $('#page').pagination({
+        dataSource:data,
+        pageSize: 5,
+        showPageNumbers: false,
+        showNavigator: true,
+        callback: function(data, pagination) {
+            datashow(data)
+        }
+    })
+}

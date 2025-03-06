@@ -14,7 +14,8 @@ let sub1=()=>{
         Swal.fire({
             title: "Drag me!",
             icon: "success",
-            draggable: true
+            draggable: true,
+            timer: 450000
            
           });
         return false;

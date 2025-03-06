@@ -14,11 +14,33 @@
   display: flex;
     /* padding: 10px;  */
     align-items: center;
-  justify-content:end ;
+  justify-content:right ;
   padding: 15px 20px;
   
   
 }
+
+#nav1{
+  width: 100%;
+  color: black;
+ /* position: fixed; */
+  height: 80px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+    /* padding: 10px;  */
+    
+  
+  
+  
+}
+
+
+#ii{
+text-align: right;
+
+}
+
 
 #nav nav ul{
   list-style: none;
@@ -98,6 +120,7 @@ body{
   font-size: 30px;
 }
 
+
 #fc4{
   font-size: large;
   padding-top: 0.5%;
@@ -108,7 +131,11 @@ body{
   color: white;
   border-radius: 5px;
 }
-#fc4:hover{
+a{
+  text-decoration: none;
+  color: white;
+}
+#fc4 a:hover{
   color: black;
   background-color: white;
  
@@ -579,3 +606,88 @@ transform: scale(1.5);
 overflow: hidden;
  }
   
+
+
+
+
+ footer {
+  background: linear-gradient(45deg, #C9DCE9,#2A63AB
+  , #001842);  
+   background-size: 200% 200%;
+   animation: gradient-shift 5s ease infinite;
+
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  height: 30vh;
+}
+
+
+@keyframes gradient-shift {
+   0% {
+     background-position: 0% 50%;
+   }
+   100% {
+     background-position: 100% 50%;
+   }
+  }
+.footer-logo{
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  
+}
+.footer-logo span{
+  color: orange;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-links a, .footer-social a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 25px;
+  /* font-family: "Grechen Fuemen", serif; */
+  /* font-weight: bold; */
+  font-style: normal;
+
+
+}
+.footer-social a i {
+  font-size: 25px;
+}
+.footer-links a:hover, .footer-social a:hover {
+  color: orange;
+}
+.footer-copy{
+  font-family: "Grechen Fuemen", serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+}
+
+
+
+@media(max-width:450px){
+
+  #nav{
+    display: none;
+  }
+
+
+#fc1{
+padding-left:1% ;
+ font-size: 20px;
+
+}
+
+#ic5{
+  display: none;
+}
+#im{
+  width: 100%;
+}
+}

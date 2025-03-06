@@ -20,7 +20,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="show.css">
+<!-- Pagination css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.css" integrity="sha512-TH+vnrhByFI2RzNvaHSqt6EwoJ9Bp+yGAGTWp84qTuTx315ebnypxtyGHpli55Rm4N4J+N/0W9xAL2b5RZ2ZSA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<link rel="stylesheet" href="show.css">
 </head>
 <body onload="fetchdata()">
     
@@ -45,6 +48,7 @@
         <th>passport</th>
         <th>adult</th>
         <th>child</th>
+        <th>Total</th>
         <th>del</th>
         <th>update</th>
         </thead>
@@ -53,7 +57,7 @@
         </tbody>
                 </table>
 
-
+<div id="page"></div>
 
                 <div id="formdata"></div>
 
@@ -61,7 +65,14 @@
 
 <!-- SWEETALERT -->
                 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="tickt.js"></script>
+  
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>                
+
+<!-- pagination -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.min.js" integrity="sha512-GzbaI5EsNzdEUq6/2XLYpr1y9CUZRIVsUeWTAFgULtQa5jZ3Nug8i0nZKM6jp9NffBCZhymPPQFcF0DK+JkRpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+                <script src="tickt.js"></script>
 </body>
 </html>
 
