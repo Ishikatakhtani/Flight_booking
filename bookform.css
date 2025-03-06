@@ -214,3 +214,45 @@ body{
   text-decoration: none;
   color: black;
 }
+
+
+@media(max-width:450px){
+
+  #nav{
+    display: none;
+  }
+
+  #city{
+    display: flex;
+    flex-direction: column;
+  }
+  #inpdep{
+width: 110%;
+  }
+  #inpdes{
+    width: 110%;
+  }
+
+  #date{
+    display: flex;
+    flex-direction: column; 
+  }
+
+  #pass{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #inpadult{
+    width: 105%;
+  }
+
+  #flightoptions{
+    width: 45%;
+  }
+  #flight{
+    width: 55%;
+    margin-left: 25%;
+    margin-top: 2%;
+  }
+}

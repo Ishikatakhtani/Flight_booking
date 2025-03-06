@@ -143,16 +143,24 @@ body{
   padding-left: 1%;
   padding-right: 1%;
   font-size: 20px;
-  background: #0052D4;
+ 
   color: white;
   border-radius: 5px;
 }
+#bk a{
+  text-decoration: none;
+  color: black;
+}
 
-#bk:hover{
+#bk a:hover{
   
-    color: black;
+    color: blue;
     background-color: white;
 }
+
+
+
+
 /* #q1{
   border: 1px solid black;
   display: flex;
@@ -190,8 +198,10 @@ body{
     width: 100%;
     padding-top: 50px;
     /* padding-bottom: 50px; */
-    
+   
   }
+
+  
 
   .swiper-slide {
     background-position: center;
@@ -221,8 +231,10 @@ body{
     justify-content: center;
     align-items: center;
     font-style: italic;
-    
+    font-size: 38px;
   }
+
+  
 
 #hc2{
   padding-top: 2%;
@@ -468,7 +480,45 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100%;
     height: 100%;
     object-fit: cover;
+   
   }
+
+
+  #i1{
+    
+      position: absolute;
+      bottom: 30px;
+      left: 15px;
+  color: white;
+  font-size:xx-large;
+  }
+
+  #i2{
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+color:white;
+background-color: transparent;
+font-size:25px;
+border: none;
+  }
+
+
+#i2 a{
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+
+#i2 a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+}
+
 
   #space{
     display: flex;

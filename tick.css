@@ -63,7 +63,9 @@
   }
 
   #infoheading{
-    margin-left: 2%;
+    margin-top: 1%;
+    margin-left: 5%;
+
   }
 
 #info1{
@@ -223,6 +225,7 @@
     padding-top: 1%;
     padding-bottom: 1%;
     font-size: 20px;
+    margin-bottom: 15%;
 }
 #flightoptions:hover{
     background-color:blue;
@@ -236,8 +239,9 @@
 }
 
 #pay{
-    padding-left: 35%;
+    padding-left: 5%;
     padding-top: 9%;
+    color: #f39c12;
 }
 #fare{
     font-size: 30px;
@@ -249,4 +253,54 @@
 
 #total{
     font-size: 30px;
+}
+
+
+
+#dat{
+    margin-left: 5%;
+}
+
+#book{
+    padding-left: 2%;
+}
+
+
+@media(max-width:450px){
+
+    #nav{
+        display: none;
+    }
+
+    #city{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #date{
+        display: flex;
+        flex-direction: column;  
+    }
+    #class{
+        display: flex;
+        flex-direction: column;
+    }
+    #pass1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pass{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #flightoptions{
+        width: 25%;
+    }
+
+    #comp{
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -77,14 +77,21 @@ body {
     border-radius: 5px;
 }
 
-#c4{
-color: white;
+
+#c4 a{
+    text-decoration: none;
+    color: white;
 }
 
-    #c4:hover{
+     #c4 a:hover{
         color:blue;
         }
 
 h2{
     font-size: 30px;
+}
+
+
+#c4 a{
+text-decoration: none;
 }

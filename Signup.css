@@ -36,10 +36,13 @@ background-repeat: no-repeat;
 
 
 
-    
+    #c4 a{
+        color: black;
+        text-decoration: none;
+    }
    
 
-   #c4:hover{
+   #c4 a:hover{
 color:blue;
    }
 
