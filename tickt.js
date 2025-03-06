@@ -248,7 +248,7 @@ document.querySelector("#formdata").innerHTML=formdata
 
 
 
-let paginationdata=()=>{
+let paginationdata=(data)=>{
     $('#page').pagination({
         dataSource:data,
         pageSize: 5,
