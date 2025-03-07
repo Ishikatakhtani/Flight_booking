@@ -619,7 +619,7 @@ overflow: hidden;
   color: white;
   text-align: center;
   padding: 20px 0;
-  height: 30vh;
+  height: 40%;
 }
 
 
@@ -677,6 +677,9 @@ overflow: hidden;
     display: none;
   }
 
+#cover{
+  height: 30%;
+}
 
 #fc1{
 padding-left:1% ;
@@ -689,5 +692,38 @@ padding-left:1% ;
 }
 #im{
   width: 100%;
+}
+
+#ac12{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#ac9{
+width: 100%;
+font-size: 20px;
+}
+#ac10{
+  width: 100%;
+  font-size: 20px;
+  }
+  #ac11{
+    width: 100%;
+    font-size: 20px;
+    } 
+
+#head1{
+  font-size: 25px;
+}
+
+#footer{
+  height: 100%;
+}
+
+#ic4{
+  display: none;
+}
+#ic3{
+  display: none;
 }
 }
