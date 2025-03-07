@@ -47,6 +47,12 @@
   }
   
 
+  #outt{
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
+  }
+
   body{
     background: linear-gradient(45deg, #49535a,#2A63AB
    , #001842);  

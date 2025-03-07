@@ -143,3 +143,11 @@
         // Waits 1000ms after typing "First"
         strings: ['^1000','VISIT WORLD'],
       });
+
+
+
+
+let logout=()=>{
+  localStorage.clear()
+  location.href="index.html"
+}

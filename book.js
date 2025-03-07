@@ -58,3 +58,9 @@ var swiper = new Swiper('.swiper1', {
     },
   },
 });
+
+
+let logout=()=>{
+  localStorage.clear()
+  location.href="index.html"
+}

@@ -47,6 +47,13 @@
   color: #f39c12;
 }
 
+
+#outt{
+  border: none;
+  background-color: transparent;
+  font-size: 23px;
+}
+
 body{
     background-image: url(https://i.pinimg.com/736x/6e/91/cd/6e91cd76d916e56255317d19dbb9a21d.jpg);
     background-repeat: no-repeat;

@@ -259,3 +259,8 @@ let paginationdata=(data)=>{
         }
     })
 }
+
+let logout=()=>{
+    localStorage.clear()
+    location.href="index.html"
+  }

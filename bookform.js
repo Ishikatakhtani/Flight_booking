@@ -19,3 +19,8 @@ let change1=()=>{
         b.style.color="yellow"
     }
 }
+
+let logout=()=>{
+    localStorage.clear()
+    location.href="index.html"
+  }

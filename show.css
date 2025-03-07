@@ -46,6 +46,14 @@
     color: #f39c12;
   }
 
+
+
+  #outt{
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
+  }
+
 body {
    
     background: linear-gradient(to right, #74ebd5, #ACB6E5);
@@ -118,7 +126,7 @@ h2{
 @media(max-width:450px){
 
   #nav{
-    display: none;
+   display: none;
   }
 
 table{
@@ -130,27 +138,13 @@ thead{
   display: flex;
   flex-direction: column;
 }
-  #formdata{
-    display: flex;
-    flex-direction:column;
-  }
-
-  body{
-    display: flex;
-    flex-direction: column;
-  }
+  
+  
   th{
     display: flex;
     flex-direction: column;
   }
-  #t{
-    display: flex;
-    flex-direction: column;
+  
 
-  }
-
-  #t th{
-    display: flex;
-    flex-direction: column;
-  }
+  
 }

@@ -46,6 +46,13 @@
     color: #f39c12;
   }
 
+
+  #outt{
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
+  }
+   
 body{
     /* background-image: url(https://media.istockphoto.com/id/1066253974/photo/airplane-flight-tropical-vacations.jpg?s=612x612&w=0&k=20&c=fL1ixGnqGVHW2Fph7Gwg0Gt5EmhxiLMDNAAb1ubje_w=) ;
     background-repeat: no-repeat;

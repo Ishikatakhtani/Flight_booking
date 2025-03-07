@@ -69,6 +69,12 @@ text-align: right;
 }
 
 
+#outt{
+  border: none;
+  background-color: transparent;
+  font-size: 23px;
+}
+
 body{
    /* background: linear-gradient(45deg, #C9DCE9,#2A63AB
    , #001842);  */

@@ -166,6 +166,19 @@
       "inpadult": null,
       "inpchild": null,
       "price": 5000
+    },
+    {
+      "id": "8a5c",
+      "inpdep": "AA",
+      "inpdes": "",
+      "inpdate": "",
+      "inprdate": "",
+      "inpsel": "Economy",
+      "inpnum": "",
+      "inppas": "",
+      "inpadult": 1,
+      "inpchild": 1,
+      "price": 5000
     }
   ]
 }
