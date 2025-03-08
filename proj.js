@@ -10,17 +10,18 @@ let sub1=()=>{
         
 
     if(ipnumber==localnum && ippassword==localpas){
-        location.href="Home.html"
+       
         Swal.fire({
             title: "Drag me!",
             icon: "success",
-            draggable: true,
-            timer: 450000
+            draggable: true
            
           });
-        return false;
+         
+        
     }
-    
+    location.href="Home.html"
+    return false;
    
     
     }
