@@ -54,15 +54,23 @@
   font-size: 23px;
 }
 
-body{
+/* body{
     background-image: url(https://i.pinimg.com/736x/6e/91/cd/6e91cd76d916e56255317d19dbb9a21d.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
+
+/* body {
+   
+  background: linear-gradient(45deg, #C9DCE9,#2A63AB
+  , #001842);  
+  
+
+} */
 #home1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
     width: 100%;
    
@@ -76,6 +84,9 @@ body{
 #home2{
     height: 100%;
     width: 100%;
+   
+      border: #f39c12 5px solid;
+  
 }
 
 #options{
@@ -83,7 +94,23 @@ body{
   flex-direction: row;
   color: White;
   border: black 1px solid;
+  margin-bottom: 5%;
+  
+  background: linear-gradient(45deg, #102240,#2A63AB
+  ,  #C9DCE9);  
+   background-size: 200% 200%;
+   animation: gradient-shift 5s ease infinite;
 }
+@keyframes gradient-shift {
+   0% {
+     background-position: 0% 50%;
+   }
+   100% {
+     background-position: 100% 50%;
+   }
+ }
+  
+
 
 
 #option1time{
@@ -175,6 +202,141 @@ font-size: 25px;
 
 }
 
+
+
+
+
+
+@font-face {
+  font-display: block;
+  font-family: Mori;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://assets.codepen.io/16327/PPMori-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-display: block;
+  font-family: Mori;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://assets.codepen.io/16327/PPMori-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-display: block;
+  font-family: Fraktion Mono;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://assets.codepen.io/16327/PPFraktionMono-Bold.woff)
+    format("woff");
+}
+
+:root {
+  --color-shockingly-green: #0ae448;
+  --color-just-black: #0e100f;
+  --color-surface-white: #fffce1;
+  --color-pink: #fec5fb;
+  --color-shockingly-pink: #f100cb;
+  --color-orangey: #ff8709;
+  --color-lilac: #9d95ff;
+  --color-lt-green: #abff84;
+  --color-blue: #00bae2;
+  --color-grey: gray;
+  --color-surface75: #bbbaa6;
+  --color-surface50: #7c7c6f;
+  --color-surface25: #42433d;
+}
+
+body {
+  color: var(--color-surface-white);
+  background: linear-gradient(45deg, #C9DCE9,#2A63AB
+  , #001842); 
+  font-family: Mori, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.group.reorder {
+  flex-direction: row;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+.group {
+  width: 50%; 
+  height: auto;
+  margin: 1rem auto;
+  padding: 4px;
+ border: dashed 2px var(--color-surface-white);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--color-just-black);
+  position: relative;
+  border-radius: 10px;
+}
+
+.box {
+  margin: 4px;
+  padding: 8px;
+  line-height: 28px;
+  border-radius: 10px;
+}
+.box:nth-child(1) {
+  background-color: #bef3fe;
+}
+.box:nth-child(2) {
+   background-color: var(--color-blue);
+}
+.box:nth-child(3) {
+  background-color: var(--color-pink);
+}
+.box:nth-child(4) {
+   background-color: #e1faff;
+}
+.box:nth-child(5) {
+  background-color: var(--color-blue);
+}
+.box:nth-child(6) {
+  background-color: var(--color-pink);
+}
+button {
+  margin: 0 auto;
+  display: inline-block;
+  outline: none;
+  padding: 8px 14px;
+  background: var(--dark);
+  border: solid 2px var(--color-surface-white);
+  color: var(--light);
+  text-decoration: none;
+  border-radius: 99px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 18px;
+}
+
+.gsap-logo {
+  width: 20vw;
+  max-width: 90px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+
+img {
+  max-width: 100%;
+}
+
 @media(max-width:450px){
   
  #home1{
@@ -192,6 +354,7 @@ font-size: 25px;
   padding-left: 4%;
   padding-top: 1%;
   padding-bottom: 1%;
+ 
  }
 
  #option1{
@@ -199,6 +362,7 @@ font-size: 25px;
   flex-direction: row;
   gap: 52px;
   padding-bottom: 10%;
+  
  }
 
  #option1time{

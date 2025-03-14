@@ -151,3 +151,20 @@ let logout=()=>{
   localStorage.clear()
   location.href="index.html"
 }
+const tl = gsap.timeline({
+  scrollTrigger: {
+    scrub: 1,
+    pin: true,
+    trigger: "#World",
+    start: "50% 50%",
+    endTrigger: "#World",
+    end: "bottom 50%",
+  },
+});
+
+tl.to("#World", {
+  rotateZ: 360,
+});
+
+// change from here 
+
