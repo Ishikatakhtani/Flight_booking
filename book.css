@@ -202,6 +202,63 @@ font-size: 25px;
 
 }
 
+#inc{
+  display: flex;
+            justify-content: center;
+            align-items: center;
+          
+}
+
+
+#ins{
+  display: flex;
+  align-items: center;
+}
+
+#blue1 {
+  background-color: #00008b;
+  color: white;
+  padding: 20px;
+  width: 50%;
+  height:50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+}
+
+#blue1 p {
+  margin: 5px 0;
+}
+
+#l {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+#info-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-left: 15px;
+}
+
+#info-box {
+  width: 130px;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #003366;
+  border-radius: 10px;
+}
+
+#light {
+  background-color: #87CEEB;
+}
+
+#dark {
+  background-color: #ADD8E6;
+}
 
 
 
