@@ -28,15 +28,18 @@
  </header >
 
 <body>
-    
+    <form>
 <h1 id="heading">Flight Ticket booking</h1>
 
 <div id="flight"> 
+    <h3 id="errorname"></h3>
 <div > <button id="flight1" onclick="change()">Round trip</button> </div>
  <div > <button id="flight2" onclick="change1()" >One Way </button></div>
 </div>
+<p id="errorname"></p>
 <br> <br> 
 <div id="book">
+   
 <div id="city">
     <div id="from">From : <br>
         <input type="text" placeholder="type departure city" id="inpdep">
@@ -76,9 +79,9 @@
 
 </div>
  <br> <br> <br> <br> 
-<button id="flightoptions"> <a href="book.html">Sreach Flight  </a></button>
+<button id="flightoptions" onclick="return hb()"> Sreach Flight  </button>
 </div>
-
+</form>
 </body>
 
 

@@ -51,7 +51,6 @@
       "price": 5000
     },
     {
-      "id": "e7f7",
       "inpdep": "Ishika",
       "inpdes": "Takhtani",
       "inpdate": "",
@@ -61,7 +60,8 @@
       "inppas": "",
       "inpadult": "2",
       "inpchild": "1",
-      "price": 5000
+      "price": 5000,
+      "id": "e7f7"
     },
     {
       "id": "26c4",

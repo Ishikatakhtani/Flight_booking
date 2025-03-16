@@ -89,40 +89,6 @@ fetch(url , {method:"DELETE"})
 }
 
 
-let ins = () => {
-    let sdep = document.querySelector("#inpdep").value;
-    let sdes = document.querySelector("#inpdes").value;
-    let sdate = document.querySelector("#inpdate").value;
-    let sdater = document.querySelector("#inprdate").value;
-    let ssel = document.querySelector("#inpsel").value;
-    let snum = document.querySelector("#inpnum").value;
-    let spass = document.querySelector("#inppas").value;
-    let sadult =parseInt( document.querySelector("#inpadult").value);
-    let schild =parseInt( document.querySelector("#inpchild").value);
-
-    let url = 'http://localhost:3000/flight';
-
-    fetch(url, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            "inpdep": sdep,
-            "inpdes": sdes,
-            "inpdate": sdate,
-            "inprdate": sdater,  
-            "inpsel": ssel,
-            "inpnum": snum,
-            "inppas": spass,
-            "inpadult": sadult,
-            "inpchild": schild,
-            "price":5000
-        })
-    })
-  location.href="show.html"
-return false
-}
 
 
 
@@ -263,4 +229,106 @@ let paginationdata=(data)=>{
 let logout=()=>{
     localStorage.clear()
     location.href="index.html"
-  }
+  }    
+
+
+
+
+let ins=()=>{
+  
+let dep=document.querySelector("#inpdep").value;
+let des=document.querySelector("#inpdes").value;
+let date=document.querySelector("#inpdate").value;
+let rdate=document.querySelector("#inprdate").value;
+let num=document.querySelector("#inpnum").value;
+let passport=document.querySelector("#inppas").value;
+let adult=document.querySelector("#inpadult").value;
+
+let errname=document.querySelector("#errorname");
+
+if(dep==""){
+  //  let nameinput=document.querySelector("#Fname")
+  //  nameinput.style.border= "1px solid red"
+  // nameinput.placeholder="enter name "
+  errname.innerHTML="Fill the required feild"
+  errname.style.color="red"
+  return false
+}
+if(des==""){
+  //  let nameinput=document.querySelector("#name")
+  //  nameinput.style.border= "1px solid red"
+  // nameinput.placeholder="enter name "
+  errname.innerHTML="Fill the required feild"
+  errname.style.color="red"
+  return false
+}
+
+
+
+
+
+else if(date==""){
+  //  errnumber.innerHTML=""
+  errname.innerHTML="Fill the required feild"
+  errname.style.color="red"
+  return false
+}
+else if(rdate==""){
+    errname.innerHTML="Fill the required feild"
+    errname.style.color="red"
+    return false
+}
+
+else if(num=="" ){
+
+    errname.innerHTML="Fill the required feild"
+    errname.style.color="red"
+    return false
+}
+else if(passport==""){
+    errname.innerHTML="Fill the required feild"
+    errname.style.color="red"
+    return false
+}
+
+
+else if(adult=="" ){
+    errname.innerHTML="Fill the required feild"
+    errname.style.color="red"
+    return false
+      
+}
+
+let sdep = document.querySelector("#inpdep").value;
+let sdes = document.querySelector("#inpdes").value;
+let sdate = document.querySelector("#inpdate").value;
+let sdater = document.querySelector("#inprdate").value;
+let ssel = document.querySelector("#inpsel").value;
+let snum = document.querySelector("#inpnum").value;
+let spass = document.querySelector("#inppas").value;
+let sadult =parseInt( document.querySelector("#inpadult").value);
+let schild =parseInt( document.querySelector("#inpchild").value);
+
+let url = 'http://localhost:3000/flight';
+
+fetch(url, {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        "inpdep": sdep,
+        "inpdes": sdes,
+        "inpdate": sdate,
+        "inprdate": sdater,  
+        "inpsel": ssel,
+        "inpnum": snum,
+        "inppas": spass,
+        "inpadult": sadult,
+        "inpchild": schild,
+        "price":5000
+    })
+})
+location.href="show.html"
+return false
+}
