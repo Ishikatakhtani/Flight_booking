@@ -2,13 +2,9 @@ let sub1=()=>{
     let ipnumber=document.querySelector("#lognum").value;
     let ippassword=document.querySelector("#logpass").value;
 
-    
-    
        let localnum=localStorage.getItem("numm")
        let localpas=localStorage.getItem("passs")
-    
-        
-
+  
     if(ipnumber==localnum && ippassword==localpas){
        
         Swal.fire({
@@ -16,12 +12,12 @@ let sub1=()=>{
             icon: "success",
             draggable: true
            
-          });
-         
-        
+     
+        });    
+    
+        location.href="Home.html"
+        return false;
     }
-    location.href="Home.html"
-    return false;
    
     
     }
