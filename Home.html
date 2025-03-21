@@ -6,9 +6,7 @@
     <title>Document</title>
 
  <!-- font -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Monomakh&family=Oleo+Script:wght@400;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+ 
  
 
      <!-- Swiper1 -->
@@ -41,21 +39,19 @@
 
   <header id="nav"> 
     <nav>
+     
     
-        <div class="logo">
-          
-        </div>
         <ul id="nav-links">
           
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="#india">Sreach</a></li>
+            <li id="sreach"><a href="Home.html">Home</a></li>
+            <li ><a href="#india">Sreach</a></li>
             <li><a href="show.html">Trips</a></li>
             <li><a href="bookform.html">Book</a></li>
             <li><button id="outt" onclick="logout()">Logout</button></li>
             
         </ul>
  </nav>
- </header >
+ </header>
 </div>
 <!-- Swiper1 -->
 <!-- <div class="swiper">
@@ -68,8 +64,8 @@
           <div class="bar"></div>
         </div> -->
         <div id="cover">
-         <video autoplay , loop, muted id="myVideo"
-         src="p7.mp4"></video>
+         <!-- <video autoplay  loop muted id="myVideo"
+         src="p7.mp4"></video> -->
           <div data-aos="fade-right"
              data-aos-offset="300"
              data-aos-easing="ease-in-sine">
@@ -456,7 +452,11 @@ gsap.to("#ic4", {
  </script> -->
 
 
- 
+ <script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+  }
+</script>
     <script src="Home.js"></script>
 </body>
 

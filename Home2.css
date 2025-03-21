@@ -15,32 +15,12 @@
     /* padding: 10px;  */
     align-items: center;
   justify-content:right ;
-  padding: 15px 20px;
-  
-  
-}
-
-
-#nav1{
-  width: 100%;
-  color: black;
- /* position: fixed; */
-  height: 80px;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-    /* padding: 10px;  */
-    
   
   
   
 }
 
 
-#ii{
-text-align: right;
-
-}
 
 
 #nav nav ul{
@@ -688,9 +668,33 @@ overflow: hidden;
 @media(max-width:450px){
 
   #nav{
-    display: none;
+    font-size: 20px;
+    display: flex; 
+      align-items: left;
+    justify-content:center ;
   }
 
+  #nav nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 1%;
+  }
+
+  #nav nav ul #sreach{
+    display: none;
+  }
+  #nav-links a:hover {
+    color: #f39c12;
+  }
+  #outt{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  
+  
 #cover{
   height: 30%;
 }

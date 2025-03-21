@@ -226,8 +226,31 @@ body{
 @media(max-width:450px){
 
   #nav{
+    font-size: 20px;
+    display: flex; 
+      align-items: left;
+    justify-content:center ;
+  }
+
+  #nav nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 1%;
+  }
+
+  #nav nav ul #sreach{
     display: none;
   }
+  #nav-links a:hover {
+    color: #f39c12;
+  }
+  #outt{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
 
   #city{
     display: flex;
