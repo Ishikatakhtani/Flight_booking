@@ -22,29 +22,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
-    /* animation:  slideIn 0.8s ease-in-out; */
+padding-top: 15%;
 
 }
 
 
-
-/* @keyframes SlideIn {
-    from{
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    to{
-        transform: scale(1);
-        opacity: 1;
-    }
-    
-} */
-
 .c1 {
     width: 80%;
-    border-radius: 15px;
-    
+    border-radius: 15px;  
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 .login {

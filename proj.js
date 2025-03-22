@@ -8,7 +8,7 @@ let sub1=()=>{
     if(ipnumber==localnum && ippassword==localpas){
        
         Swal.fire({
-            title: "Drag me!",
+            title: "LOGIN SCUSESSFUL",
             icon: "success",
             draggable: true
            
@@ -113,7 +113,7 @@ else if(ipcpass==""){
 else if(ipassword!=ipcpass){
 document.querySelector("#cpass").value="";
 document.querySelector("#pass").value="";
-document.querySelector("#cpass").focus();  //to bring cusror on place where we want user to enter pass
+document.querySelector("#cpass").focus(); 
     errpass.innerHTML="please enter correct password"
     errpass.style.color="red"
     return false
