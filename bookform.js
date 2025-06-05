@@ -34,17 +34,13 @@ let adult=document.querySelector("#inpadult").value;
 let errname=document.querySelector("#errorname");
 
 if(dep==""){
-  //  let nameinput=document.querySelector("#Fname")
-  //  nameinput.style.border= "1px solid red"
-  // nameinput.placeholder="enter name "
+  
   errname.innerHTML="Fill the required feild"
   errname.style.color="red"
   return false
 }
 if(des==""){
-  //  let nameinput=document.querySelector("#name")
-  //  nameinput.style.border= "1px solid red"
-  // nameinput.placeholder="enter name "
+ 
   errname.innerHTML="Fill the required feild"
   errname.style.color="red"
   return false
@@ -55,7 +51,7 @@ if(des==""){
 
 
 else if(date==""){
-  //  errnumber.innerHTML=""
+  
   errname.innerHTML="Fill the required feild"
   errname.style.color="red"
   return false

@@ -168,3 +168,20 @@ tl.to("#World", {
 
 // change from here 
 
+function searchFlights() {
+  let from = document.getElementById("from").value;
+  let to = document.getElementById("to").value;
+  let resultsDiv = document.getElementById("results");
+  
+  if (from && to) {
+      resultsDiv.innerHTML = `<h2>Available Flights</h2>
+                             <p>Flight from ${from} to ${to}</p>
+                             <button onclick="bookFlight()">Book Now</button>`;
+  } else {
+      resultsDiv.innerHTML = "<p>Please enter both cities.</p>";
+  }
+}
+
+function bookFlight() {
+  alert("Flight booked successfully!");
+}
